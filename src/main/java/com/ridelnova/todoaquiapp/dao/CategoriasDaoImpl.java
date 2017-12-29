@@ -12,7 +12,7 @@ import com.ridelnova.todoaquiapp.utils.SpringJdbc;
 public class CategoriasDaoImpl extends SpringJdbc implements CategoriasDao {
 
 	private String qrySelectCategorias = "SELECT * FROM CAT_CATEGORIAS" + " WHERE ESTATUS = TRUE";
-
+	
 	@Override
 	public List<CategoriasDto> consultarCategoriasByStatus() {
 		return jdbcTemplate.query(qrySelectCategorias, BeanPropertyRowMapper.newInstance(CategoriasDto.class));

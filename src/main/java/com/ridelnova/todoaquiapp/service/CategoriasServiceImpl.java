@@ -17,9 +17,12 @@ public class CategoriasServiceImpl implements CategoriasService {
 	@Autowired
 	CategoriasDao categoriasDao;
 
+	/* (non-Javadoc)
+	 * @see com.ridelnova.todoaquiapp.service.CategoriasService#obtenerCategoriasByStatus()
+	 */
 	@Override
 	public List<CategoriasDto> obtenerCategoriasByStatus() {
-		log.info("Obteniendo catagorias");
+		log.info(">>>com.ridelnova.todoaquiapp.service.CategoriasService#obtenerCategoriasByStatus()<<<");
 
 		return categoriasDao.consultarCategoriasByStatus();
 	}

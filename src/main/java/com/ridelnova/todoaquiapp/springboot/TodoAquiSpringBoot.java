@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 //@SpringBootApplication
-//@EnableAutoConfiguration
+@EnableAutoConfiguration
 //@ComponentScan
-@SpringBootApplication(scanBasePackages={"com.arzate.industries.todoaquiapp"})// same as @Configuration @EnableAutoConfiguration @ComponentScan combined
+@SpringBootApplication(scanBasePackages={"com.ridelnova.todoaquiapp"})// same as @Configuration @EnableAutoConfiguration @ComponentScan combined
 public class TodoAquiSpringBoot {
 
 	public static void main(String[] args) {
